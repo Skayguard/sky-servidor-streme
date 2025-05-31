@@ -128,7 +128,8 @@ def video():
 
 if __name__ == '__main__':
     host = '0.0.0.0'  # Listen on all available network interfaces
-    port = 8000       # Port for the web server
+    # Port for the web server, configurable via PORT environment variable
+    port = int(os.environ.get('PORT', 8000))
     logging.info(f"Flask application starting on host {host} port {port}")
     # Run the Flask development server
     app.run(host=host, port=port)
