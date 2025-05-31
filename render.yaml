@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: skyguard
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: CAMERA_URL
+        value: rtsp://admin:123456@192.168.0.109:554/stream1
