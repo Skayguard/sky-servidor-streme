@@ -6,4 +6,4 @@ services:
     startCommand: "python app.py"
     envVars:
       - key: CAMERA_URL
-        value: rtsp://admin:123456@192.168.0.109:554/stream1
+        value: rtsp://admin:123456@192.168.0.102:554/stream1
